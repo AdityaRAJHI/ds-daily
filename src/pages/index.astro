@@ -1,0 +1,144 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="DS Daily - Learn Data Science Daily">
+	<main class="max-w-6xl mx-auto px-4 py-12">
+		<section class="text-center mb-16">
+			<h1 class="text-5xl font-bold text-gray-900 mb-6">
+				Learn Data Science,<br />One Concept at a Time
+			</h1>
+			<p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+				Daily articles and tutorials about Python, Statistics, Machine Learning, and more. Perfect for data scientists and analysts.
+			</p>
+			<a
+				href="/newsletter"
+				class="inline-block bg-primary text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors"
+			>
+				Subscribe to Newsletter
+			</a>
+		</section>
+
+		<section class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mb-16">
+			<div class="text-center">
+				<img src="/images/python.svg" alt="Python" class="w-20 h-20 mx-auto mb-2" />
+				<p class="font-medium">Python</p>
+			</div>
+			<div class="text-center">
+				<img src="/images/data-visualization.svg" alt="Data Visualization" class="w-20 h-20 mx-auto mb-2" />
+				<p class="font-medium">Data<br/>Visualization</p>
+			</div>
+			<div class="text-center">
+				<img src="/images/jupyter.svg" alt="Jupyter" class="w-20 h-20 mx-auto mb-2" />
+				<p class="font-medium">Jupyter</p>
+			</div>
+			<div class="text-center">
+				<img src="/images/statistics.svg" alt="Statistics" class="w-20 h-20 mx-auto mb-2" />
+				<p class="font-medium">Statistics</p>
+			</div>
+			<div class="text-center">
+				<img src="/images/oop.svg" alt="OOP" class="w-20 h-20 mx-auto mb-2" />
+				<p class="font-medium">OOP</p>
+			</div>
+			<div class="text-center">
+				<img src="/images/sql.svg" alt="SQL" class="w-20 h-20 mx-auto mb-2" />
+				<p class="font-medium">SQL</p>
+			</div>
+			<div class="text-center">
+				<img src="/images/optimization.svg" alt="Optimization" class="w-20 h-20 mx-auto mb-2" />
+				<p class="font-medium">Optimization</p>
+			</div>
+			<div class="text-center">
+				<img src="/images/machine-learning.svg" alt="Machine Learning" class="w-20 h-20 mx-auto mb-2" />
+				<p class="font-medium">Machine<br/>Learning</p>
+			</div>
+			<div class="text-center">
+				<img src="/images/git.svg" alt="Git" class="w-20 h-20 mx-auto mb-2" />
+				<p class="font-medium">Git</p>
+			</div>
+			<div class="text-center">
+				<img src="/images/debugging.svg" alt="Debugging" class="w-20 h-20 mx-auto mb-2" />
+				<p class="font-medium">Debugging</p>
+			</div>
+			<div class="text-center">
+				<img src="/images/no-code-tools.svg" alt="No-code Tools" class="w-20 h-20 mx-auto mb-2" />
+				<p class="font-medium">No-code<br/>Tools</p>
+			</div>
+			<div class="text-center">
+				<img src="/images/data-analytics.svg" alt="Data Analytics" class="w-20 h-20 mx-auto mb-2" />
+				<p class="font-medium">Data<br/>Analytics</p>
+			</div>
+		</section>
+
+		<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+			<article class="border rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+				<img
+					src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800"
+					alt="Python Programming"
+					class="w-full h-48 object-cover"
+				/>
+				<div class="p-6">
+					<h2 class="text-xl font-bold text-gray-900 mb-2">
+						<a href="/blog/python-tips" class="hover:text-primary">
+							10 Python Tips for Data Scientists
+						</a>
+					</h2>
+					<p class="text-gray-600 mb-4">
+						Learn essential Python tricks that will make your data analysis more efficient.
+					</p>
+					<div class="flex items-center text-sm text-gray-500">
+						<span>5 min read</span>
+						<span class="mx-2">•</span>
+						<span>Python</span>
+					</div>
+				</div>
+			</article>
+
+			<article class="border rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+				<img
+					src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800"
+					alt="Machine Learning"
+					class="w-full h-48 object-cover"
+				/>
+				<div class="p-6">
+					<h2 class="text-xl font-bold text-gray-900 mb-2">
+						<a href="/blog/ml-basics" class="hover:text-primary">
+							Understanding Machine Learning Basics
+						</a>
+					</h2>
+					<p class="text-gray-600 mb-4">
+						A comprehensive guide to getting started with machine learning concepts.
+					</p>
+					<div class="flex items-center text-sm text-gray-500">
+						<span>8 min read</span>
+						<span class="mx-2">•</span>
+						<span>Machine Learning</span>
+					</div>
+				</div>
+			</article>
+
+			<article class="border rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+				<img
+					src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800"
+					alt="Statistics"
+					class="w-full h-48 object-cover"
+				/>
+				<div class="p-6">
+					<h2 class="text-xl font-bold text-gray-900 mb-2">
+						<a href="/blog/statistics" class="hover:text-primary">
+							Essential Statistics for Data Science
+						</a>
+					</h2>
+					<p class="text-gray-600 mb-4">
+						Master the fundamental statistical concepts every data scientist should know.
+					</p>
+					<div class="flex items-center text-sm text-gray-500">
+						<span>6 min read</span>
+						<span class="mx-2">•</span>
+						<span>Statistics</span>
+					</div>
+				</div>
+			</article>
+		</section>
+	</main>
+</Layout>
