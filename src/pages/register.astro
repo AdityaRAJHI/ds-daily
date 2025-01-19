@@ -72,20 +72,17 @@
         <footer class="bg-gray-50 mt-20">
           <div class="max-w-6xl mx-auto px-4 py-12">
             <div class="mb-8">
-              <select id="category-filter" class="px-4 py-2 border rounded-full text-gray-700 bg-white hover:border-gray-400 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
-                <option value="all">All categories</option>
-                <option value="python">Python</option>
-                <option value="machine-learning">Machine Learning</option>
-                <option value="data-science">Data Science</option>
-                <option value="statistics">Statistics</option>
-                <option value="nlp">NLP</option>
-                <option value="llm">LLM</option>
-                <option value="workflows">Workflows</option>
+              <select class="px-4 py-2 border rounded-full text-gray-700 bg-white hover:border-gray-400 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                <option>All categories</option>
+                <option>Python</option>
+                <option>Machine Learning</option>
+                <option>Data Science</option>
+                <option>Statistics</option>
               </select>
             </div>
 
-            <div class="grid gap-8" id="article-container">
-              <article class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow" data-category="llms">
+            <div class="grid gap-8">
+              <article class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
                 <div class="flex gap-4 items-start">
                   <div class="flex-1">
                     <div class="flex items-center gap-4 mb-4">
@@ -114,7 +111,7 @@
                 </div>
               </article>
 
-              <article class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow" data-category="rag">
+              <article class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
                 <div class="flex gap-4 items-start">
                   <div class="flex-1">
                     <div class="flex items-center gap-4 mb-4">
@@ -136,7 +133,7 @@
                         <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Avi" alt="Avi Chawla" class="w-8 h-8 rounded-full border-2 border-white" />
                         <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Akshay" alt="Akshay Pachaar" class="w-8 h-8 rounded-full border-2 border-white" />
                       </div>
-                                     <span class="text-gray-700">Raj Kumar Sinha </span>
+                                      <span class="text-gray-700">Raj Kumar Sinha </span>
                     </div>
                   </div>
                   <img src="https://placehold.co/200x150" alt="Article thumbnail" class="w-48 h-36 object-cover rounded-lg" />
@@ -198,23 +195,6 @@
             if (!searchInput.contains(event.target) && !searchResults.contains(event.target)) {
               searchResults.classList.add('hidden');
             }
-          });
-
-          const categoryFilter = document.getElementById('category-filter');
-          const articleContainer = document.getElementById('article-container');
-          const articles = Array.from(articleContainer.querySelectorAll('article'));
-
-          categoryFilter.addEventListener('change', function() {
-            const selectedCategory = this.value;
-
-            articles.forEach(article => {
-              const articleCategory = article.dataset.category;
-              if (selectedCategory === 'all' || articleCategory === selectedCategory) {
-                article.style.display = '';
-              } else {
-                article.style.display = 'none';
-              }
-            });
           });
         </script>
       </body>

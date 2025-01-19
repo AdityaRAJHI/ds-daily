@@ -1,0 +1,86 @@
+---
+    import Layout from '../layouts/Layout.astro';
+    ---
+
+    <Layout title="Subscribe to DS Daily Newsletter">
+      <main class="max-w-6xl mx-auto px-4 py-12">
+        <section class="text-center mb-16">
+          <h1 class="text-5xl font-bold text-gray-900 mb-6">
+            Subscribe to Our Newsletter
+          </h1>
+          <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+            Get the latest data science articles, tutorials, and resources delivered straight to your inbox.
+          </p>
+        </section>
+
+        <section class="mb-16">
+          <h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">
+            What to Expect
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="p-6 border rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">
+                Daily Data Science Concepts
+              </h3>
+              <p class="text-gray-600">
+                Receive daily articles and tutorials covering a wide range of data science topics.
+              </p>
+            </div>
+            <div class="p-6 border rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">
+                Practical Tips and Tricks
+              </h3>
+              <p class="text-gray-600">
+                Learn practical tips and tricks to improve your data analysis and machine learning skills.
+              </p>
+            </div>
+            <div class="p-6 border rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">
+                Curated Resources
+              </h3>
+              <p class="text-gray-600">
+                Get access to curated resources, tools, and libraries to enhance your data science workflow.
+              </p>
+            </div>
+            <div class="p-6 border rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">
+                Exclusive Content
+              </h3>
+              <p class="text-gray-600">
+                Receive exclusive content and early access to new articles and tutorials.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="text-center">
+          <h2 class="text-3xl font-bold text-gray-900 mb-6">
+            Join Our Community
+          </h2>
+          <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+            Subscribe to our newsletter and join a community of passionate data scientists and analysts.
+          </p>
+          <form class="max-w-md mx-auto flex flex-col gap-4">
+            <input
+              type="email"
+              placeholder="Your email address"
+              class="px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+            />
+            <button
+              type="submit"
+              class="bg-primary text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors"
+            >
+              Subscribe Now
+            </button>
+          </form>
+        </section>
+        <section class="mt-10">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">Notes</h2>
+          <ul class="list-disc list-inside text-gray-700">
+            <li>This page is for users to subscribe to the DS Daily newsletter.</li>
+            <li>It highlights the benefits of subscribing and includes a subscription form.</li>
+            <li>Users can enter their email address and submit the form to subscribe.</li>
+          </ul>
+        </section>
+      </main>
+    </Layout>
